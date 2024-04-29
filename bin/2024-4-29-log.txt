@@ -1,0 +1,8 @@
+15:19:46 =>[error]first log message!
+15:19:46 =>[info]/mnt/e/mprpc/example/callee/friendservice.cc:main:47
+15:19:46 =>[info]service_name:FriendServiceRpc
+15:19:46 =>[info]method_name:GetFriendsList
+15:43:57 =>[error]first log message!
+15:43:57 =>[info]/mnt/e/mprpc/example/callee/friendservice.cc:main:47
+15:43:57 =>[info]service_name:FriendServiceRpc
+15:43:57 =>[info]method_name:GetFriendsList

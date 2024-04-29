@@ -1,0 +1,2 @@
+18:32:40=>first log message!
+18:32:40=>/mnt/e/mprpc/example/callee/friendservice.cc:main:47
