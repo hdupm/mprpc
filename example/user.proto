@@ -1,0 +1,46 @@
+//user.proto主要规定了rpc调用的协议
+syntax="proto3";
+
+package fixbug;
+
+option cc_generic_services=true;
+
+message ResultCode
+{
+    int32 errcode=1;
+    bytes errmsg=2;
+}
+
+//登陆方法
+message LoginRequest
+{
+    bytes name=1;
+    bytes pwd=2;
+}
+
+message LoginResponse
+{
+    ResultCode result=1;
+    bool success=2;
+}
+
+//注册方法
+message RegisterRequest
+{
+    uint32 id=1;
+    bytes name=2;
+    bytes pwd=3;
+}
+
+message RegisterResponse
+{
+    ResultCode result=1;
+    bool success=2;
+}
+
+//定义rpc方法
+service UserServiceRpc
+{
+    rpc Login(LoginRequest) returns(LoginResponse);//rpc方法 定义远程调用传入的参数和返回类型
+    rpc Register(RegisterRequest) returns(RegisterResponse);
+}
